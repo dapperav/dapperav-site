@@ -6,69 +6,68 @@
   <title>Dapper AV | Audio Video Installations</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Montserrat', sans-serif; background: #fff; color: #333; line-height: 1.6; }
-    header { background: #FFD700; color: #000; padding: 2rem 1rem; text-align: center; }
-    nav { position: sticky; top: 0; background: #333; padding: 0.5rem 1rem; text-align: center; }
-    nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; }
-    section { padding: 2rem 1rem; max-width: 960px; margin: auto; }
-    h2 { color: #FFD700; margin-bottom: 1rem; }
-    ul { margin-top: 1rem; }
-    form { display: flex; flex-direction: column; gap: 1rem; max-width: 600px; margin-top: 1rem; }
-    input, textarea { padding: 0.75rem; border: 1px solid #ccc; border-radius: 5px; }
-    button { background: #FFD700; border: none; padding: 1rem; font-weight: bold; cursor: pointer; }
-    footer { background: #f0f0f0; padding: 1rem; text-align: center; font-size: 0.9rem; }
-    a.button { background: #FFD700; color: #000; padding: 0.75rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: bold; }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      background: #000;
+      color: #FFD700;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header img {
+      width: 120px;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      color: #FFD700;
+      margin-bottom: 1rem;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 280px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    footer {
+      background: #f0f0f0;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Dapper AV</h1>
-    <p>Professional Residential & Commercial AV Installations</p>
+    <img src="LOGO1-removebg-preview.png" alt="Dapper AV Logo">
+    <h1>Dapper AV Solutions</h1>
+    <p>Residential & Commercial AV Installations</p>
   </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="home">
-    <h2>Welcome to Dapper AV</h2>
-    <p>My name is Mark Immler. I've worked in the audio video space for 20 years and offer expert low voltage installations for residential and commercial spaces. From theater systems to advanced network configurations — I’ve got you covered.</p>
-  </section>
-
-  <section id="about">
-    <h2>About</h2>
-    <p>I'm a father of 3 and a husband, a good-hearted Christian who brings integrity and care to every installation. With over 20 years of experience at respected companies like Best Buy and Geek Squad, I offer unmatched knowledge in home automation and networking systems.</p>
-  </section>
-
-  <section id="services">
-    <h2>Services</h2>
-    <ul>
-      <li>Home Theater Installations</li>
-      <li>TV Mounting (Residential & Commercial)</li>
-      <li>Whole Home Audio</li>
-      <li>Wi-Fi and Network Configurations</li>
-      <li>Commercial AV Systems</li>
-      <li>Prewiring for New Builds</li>
-      <li>Troubleshooting & Repairs</li>
-      <li>Home Automation Platforms</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Have a project or question? Let's connect:</p>
-    <form name="contact" method="POST" data-netlify="true">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p>Email: <a href="mailto:contact@dapperav.com">contact@dapperav.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/dapperav" target="_blank">@dapperav</a></p>
+  <section>
+    <h2>Service Gallery</h2>
+    <div class="gallery">
+      <img src="CUSTOMTVMOUNTING.png" alt="Custom TV Mounting">
+      <img src="FIREPLACEMOUNTINGSERVICE.png" alt="Fireplace TV Mounting">
+      <img src="PREMIUMTVMOUNTING.png" alt="Premium Mounting">
+      <img src="REMOTESETUP.png" alt="Remote Setup">
+      <img src="SMARTTVSETUP.png" alt="Smart TV Setup">
+      <img src="SOUNDBARSETUPMOUNTING.png" alt="Soundbar Setup">
+      <img src="TVMOUNTING.png" alt="TV Mounting">
+      <img src="VIDEO DEVICE SETUP.png" alt="Gaming Device Setup">
+    </div>
   </section>
 
   <footer>
