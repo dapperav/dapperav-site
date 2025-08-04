@@ -1,75 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dapper AV | Audio Video Installations</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dapper AV Solutions</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Montserrat', sans-serif; background: #fff; color: #333; line-height: 1.6; }
-    header { background: #FFD700; color: #000; padding: 2rem 1rem; text-align: center; }
-    nav { position: sticky; top: 0; background: #333; padding: 0.5rem 1rem; text-align: center; }
+    header { background: #000; color: #FFD700; padding: 2rem 1rem; text-align: center; }
+    nav { background: #333; padding: 1rem; text-align: center; }
     nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; }
-    section { padding: 2rem 1rem; max-width: 960px; margin: auto; }
+    section { padding: 2rem 1rem; max-width: 1000px; margin: auto; }
     h2 { color: #FFD700; margin-bottom: 1rem; }
-    ul { margin-top: 1rem; }
-    form { display: flex; flex-direction: column; gap: 1rem; max-width: 600px; margin-top: 1rem; }
-    input, textarea { padding: 0.75rem; border: 1px solid #ccc; border-radius: 5px; }
-    footer { background: #f0f0f0; padding: 1rem; text-align: center; font-size: 0.9rem; }
-    .button { background: #FFD700; color: #000; padding: 0.75rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: bold; border: none; cursor: pointer; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .card { border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1); background: #fff; }
+    .card img { width: 100%; height: auto; display: block; }
+    .card-footer { background: #000; color: #fff; padding: 0.75rem; font-size: 0.9rem; text-align: center; }
+    .form input, .form textarea { width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px; }
+    .form button { background: #FFD700; border: none; padding: 0.75rem 1.5rem; font-weight: bold; cursor: pointer; border-radius: 5px; }
+    footer { background: #eee; padding: 1rem; text-align: center; font-size: 0.9rem; margin-top: 2rem; }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Dapper AV</h1>
-    <p>Professional Residential & Commercial AV Installations</p>
+    <img src="https://dapperav.com/assets/logo.png" alt="Dapper AV Logo" height="100">
+    <h1>Dapper AV Solutions</h1>
+    <p>Residential & Commercial AV Installations</p>
   </header>
 
   <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
     <a href="#services">Services</a>
+    <a href="#about">About</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="home">
-    <h2>Welcome to Dapper AV</h2>
-    <p>My name is Mark Immler. I've worked in the audio video space for 20 years and offer expert low voltage installations for residential and commercial spaces. From theater systems to advanced network configurations — I’ve got you covered.</p>
-  </section>
-
   <section id="about">
     <h2>About</h2>
-    <p>I'm a father of 3 and a husband, a good-hearted Christian who brings integrity and care to every installation. With over 20 years of experience at respected companies like Best Buy and Geek Squad, I offer unmatched knowledge in home automation and networking systems.</p>
+    <p>My name is Mark Immler. I'm a father of 3 and a husband, a good-hearted Christian who brings integrity and care to every installation. With over 20 years of experience at respected companies like Best Buy and Geek Squad, I offer unmatched knowledge in home automation and networking systems.</p>
   </section>
 
   <section id="services">
-    <h2>Services</h2>
-    <ul>
-      <li>Home Theater Installations</li>
-      <li>TV Mounting (Residential & Commercial)</li>
-      <li>Whole Home Audio</li>
-      <li>Wi-Fi and Network Configurations</li>
-      <li>Commercial AV Systems</li>
-      <li>Prewiring for New Builds</li>
-      <li>Troubleshooting & Repairs</li>
-      <li>Home Automation Platforms</li>
-    </ul>
+    <h2>Service Gallery</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="assets/custom-mount.png" alt="Custom Mounting">
+        <div class="card-footer">Custom Mounting Service</div>
+      </div>
+      <div class="card">
+        <img src="assets/fireplace-mount.png" alt="Fireplace Mounting">
+        <div class="card-footer">Fireplace Mounting Service</div>
+      </div>
+      <div class="card">
+        <img src="assets/premium-mount.png" alt="Premium Mounting">
+        <div class="card-footer">Premium Mounting Service</div>
+      </div>
+      <div class="card">
+        <img src="assets/remote-setup.png" alt="Remote Setup">
+        <div class="card-footer">Smart Remote Setup</div>
+      </div>
+      <div class="card">
+        <img src="assets/tv-setup.png" alt="Smart TV Setup">
+        <div class="card-footer">Smart TV Setup</div>
+      </div>
+      <div class="card">
+        <img src="assets/soundbar-setup.png" alt="Soundbar Mount">
+        <div class="card-footer">Soundbar Setup & Mounting</div>
+      </div>
+      <div class="card">
+        <img src="assets/basic-mount.png" alt="Basic Mounting">
+        <div class="card-footer">Basic Mounting Service</div>
+      </div>
+      <div class="card">
+        <img src="assets/video-device.png" alt="Video Setup">
+        <div class="card-footer">Video Device Setup</div>
+      </div>
+    </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Have a project or question? Let’s connect:</p>
-    <form action="https://formspree.io/f/xanbpnwn" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
+    <form action="https://formspree.io/f/xanbpmwn" method="POST" class="form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit" class="button">Send Message</button>
+      <button type="submit">Send</button>
     </form>
   </section>
 
   <footer>
     &copy; 2025 Dapper AV. All rights reserved.
   </footer>
+
 </body>
 </html>
