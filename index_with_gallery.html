@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dapper AV | Audio Video Installations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      background: #FFD700;
+      color: #000;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    nav {
+      background: #333;
+      padding: 0.75rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    h2 {
+      color: #FFD700;
+      margin-bottom: 1rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+    .gallery-item img {
+      width: 100%;
+      display: block;
+    }
+    .gallery-item span {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      width: 100%;
+      padding: 0.5rem;
+      text-align: center;
+      font-weight: bold;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 600px;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background: #FFD700;
+      padding: 0.75rem;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      background: #f5f5f5;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dapper AV</h1>
+    <p>Professional Residential & Commercial AV Installations</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>Welcome to Dapper AV</h2>
+    <p>My name is Mark Immler. I've worked in the audio video space for 20 years and offer expert low voltage installations for residential and commercial spaces. From theater systems to advanced network configurations — I’ve got you covered.</p>
+    <h2>About</h2>
+    <p>I'm a father of 3 and a husband, a good-hearted Christian who brings integrity and care to every installation. With over 20 years of experience at respected companies like Best Buy and Geek Squad, I offer unmatched knowledge in home automation and networking systems.</p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Home Theater Installations</li>
+      <li>TV Mounting (Residential & Commercial)</li>
+      <li>Whole Home Audio</li>
+      <li>Wi-Fi and Network Configurations</li>
+      <li>Commercial AV Systems</li>
+      <li>Prewiring for New Builds</li>
+      <li>Troubleshooting & Repairs</li>
+      <li>Home Automation Platforms</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <div class="gallery-item"><img src="CUSTOMTVMOUNTING.png" alt="Custom Mounting"><span>Custom Mounting</span></div>
+      <div class="gallery-item"><img src="FIREPLACEMOUNTINGSERVICE.png" alt="Fireplace Mounting"><span>Fireplace Mounting</span></div>
+      <div class="gallery-item"><img src="PREMIUMTVMOUNTING.png" alt="Premium Mounting"><span>Premium Mounting</span></div>
+      <div class="gallery-item"><img src="REMOTESETUP.png" alt="Remote Setup"><span>Remote Setup</span></div>
+      <div class="gallery-item"><img src="SMARTTVSETUP.png" alt="Smart TV Setup"><span>Smart TV Setup</span></div>
+      <div class="gallery-item"><img src="SOUNDBARSETUPMOUNTING.png" alt="Soundbar Mounting"><span>Soundbar Mounting</span></div>
+      <div class="gallery-item"><img src="TVMOUNTING.png" alt="Basic Mounting"><span>Basic Mounting</span></div>
+      <div class="gallery-item"><img src="VIDEO DEVICE SETUP.png" alt="Video Device Setup"><span>Video Device Setup</span></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Have a project or question? Let's connect:</p>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Dapper AV. All rights reserved.
+  </footer>
+</body>
+</html>
