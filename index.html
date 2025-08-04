@@ -14,8 +14,9 @@
     nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; }
     section { padding: 2rem 1rem; max-width: 1000px; margin: auto; }
     h2 { color: #FFD700; }
-    .service { margin-bottom: 2rem; border-bottom: 1px solid #ccc; padding-bottom: 1.5rem; position: relative; }
-    .service img { float: right; max-width: 250px; margin-left: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .service { display: flex; flex-direction: row; align-items: center; justify-content: space-between; margin-bottom: 2rem; border-bottom: 1px solid #ccc; padding-bottom: 1.5rem; gap: 2rem; }
+    .service img { max-width: 250px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .service-text { flex: 1; }
     .service h3 { margin-top: 0; }
     .quote-button {
       display: inline-block;
@@ -28,9 +29,7 @@
       text-decoration: none;
       transition: background 0.3s ease;
     }
-    .quote-button:hover {
-      background: #e6c200;
-    }
+    .quote-button:hover { background: #e6c200; }
     .testimonial-box {
       background: #f9f9f9;
       border-left: 4px solid #FFD700;
@@ -49,7 +48,8 @@
     }
     footer { background: #eee; padding: 1rem; text-align: center; font-size: 0.9rem; margin-top: 2rem; }
     @media (max-width: 700px) {
-      .service img { float: none; display: block; margin: 1rem 0; max-width: 100%; }
+      .service { flex-direction: column; text-align: center; }
+      .service img { margin: 1rem 0; max-width: 100%; }
     }
   </style>
 </head>
@@ -70,56 +70,72 @@
   <section id="residential">
     <h2>Residential Services</h2>
     <div class="service">
+      <div class="service-text">
+        <h3>Smart TV Setup</h3>
+        <p>We professionally mount and configure your Smart TV, ensuring clean cable management and full feature activation including streaming apps and voice assistants.</p>
+        <a class="quote-button" href="index.html#contact">Get Quote</a>
+      </div>
       <img src="assets/SMARTTVSETUP.png" alt="Smart TV Setup">
-      <h3>Smart TV Setup</h3>
-      <p>We professionally mount and configure your Smart TV, ensuring clean cable management and full feature activation including streaming apps and voice assistants.</p>
-      <a class="quote-button" href="index.html#contact">Get Quote</a>
     </div>
     <div class="service">
+      <div class="service-text">
+        <h3>Soundbar Mounting</h3>
+        <p>Enhance your entertainment system with precisely installed soundbar mounting that integrates beautifully with your home aesthetic.</p>
+        <a class="quote-button" href="index.html#contact">Get Quote</a>
+      </div>
       <img src="assets/SOUNDBARSETUPMOUNTING.png" alt="Soundbar Setup">
-      <h3>Soundbar Mounting</h3>
-      <p>Enhance your entertainment system with precisely installed soundbar mounting that integrates beautifully with your home aesthetic.</p>
-      <a class="quote-button" href="index.html#contact">Get Quote</a>
     </div>
     <div class="service">
+      <div class="service-text">
+        <h3>Smart Remote Setup</h3>
+        <p>We configure and program smart remotes to control all your AV devices seamlessly, eliminating clutter and confusion.</p>
+        <a class="quote-button" href="index.html#contact">Get Quote</a>
+      </div>
       <img src="assets/REMOTESETUP.png" alt="Smart Remote">
-      <h3>Smart Remote Setup</h3>
-      <p>We configure and program smart remotes to control all your AV devices seamlessly, eliminating clutter and confusion.</p>
-      <a class="quote-button" href="index.html#contact">Get Quote</a>
     </div>
     <div class="service">
+      <div class="service-text">
+        <h3>Premium TV Mounting</h3>
+        <p>Includes articulating arms, in-wall wiring, and expert placement for the ultimate home viewing experience.</p>
+        <a class="quote-button" href="index.html#contact">Get Quote</a>
+      </div>
       <img src="assets/PREMIUMTVMOUNTING.png" alt="Premium Mounting">
-      <h3>Premium TV Mounting</h3>
-      <p>Includes articulating arms, in-wall wiring, and expert placement for the ultimate home viewing experience.</p>
-      <a class="quote-button" href="index.html#contact">Get Quote</a>
     </div>
   </section>
 
   <section id="commercial">
     <h2>Commercial Services</h2>
     <div class="service">
-      <img src="assets/VIDEO%20DEVICE%20SETUP.png" alt="Video Device Setup">
-      <h3>Commercial Video Solutions</h3>
-      <p>From menu boards to digital signage, we install and configure AV systems that elevate your brand presence.</p>
-      <a class="quote-button" href="index.html#contact">Get Quote</a>
+      <div class="service-text">
+        <h3>Commercial Video Solutions</h3>
+        <p>From menu boards to digital signage, we install and configure AV systems that elevate your brand presence.</p>
+        <a class="quote-button" href="index.html#contact">Get Quote</a>
+      </div>
+      <img src="assets/VIDEO DEVICE SETUP.png" alt="Video Device Setup">
     </div>
     <div class="service">
+      <div class="service-text">
+        <h3>Office TV Mounting</h3>
+        <p>Secure, professional display mounting for lobbies, conference rooms, and break areas.</p>
+        <a class="quote-button" href="index.html#contact">Get Quote</a>
+      </div>
       <img src="assets/TVMOUNTING.png" alt="TV Mounting">
-      <h3>Office TV Mounting</h3>
-      <p>Secure, professional display mounting for lobbies, conference rooms, and break areas.</p>
-      <a class="quote-button" href="index.html#contact">Get Quote</a>
     </div>
     <div class="service">
+      <div class="service-text">
+        <h3>Fireplace Mounting</h3>
+        <p>Expert solutions for difficult spaces like above fireplaces, ensuring safe and stylish installation.</p>
+        <a class="quote-button" href="index.html#contact">Get Quote</a>
+      </div>
       <img src="assets/FIREPLACEMOUNTINGSERVICE.png" alt="Fireplace Mounting">
-      <h3>Fireplace Mounting</h3>
-      <p>Expert solutions for difficult spaces like above fireplaces, ensuring safe and stylish installation.</p>
-      <a class="quote-button" href="index.html#contact">Get Quote</a>
     </div>
     <div class="service">
+      <div class="service-text">
+        <h3>Custom AV Installations</h3>
+        <p>Unique spaces? Unusual designs? We customize mounting, cabling, and device placement for one-of-a-kind needs.</p>
+        <a class="quote-button" href="index.html#contact">Get Quote</a>
+      </div>
       <img src="assets/CUSTOMTVMOUNTING.png" alt="Custom TV Mounting">
-      <h3>Custom AV Installations</h3>
-      <p>Unique spaces? Unusual designs? We customize mounting, cabling, and device placement for one-of-a-kind needs.</p>
-      <a class="quote-button" href="index.html#contact">Get Quote</a>
     </div>
   </section>
 
