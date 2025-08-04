@@ -3,161 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Dapper AV Solutions - Expert Residential & Commercial AV Installations in Texas.">
-  <title>Dapper AV Solutions</title>
+  <meta name="description" content="Dapper AV Services - Detailed residential and commercial AV service offerings.">
+  <title>Our Services - Dapper AV</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Montserrat', sans-serif; background: #fff; color: #333; line-height: 1.6; }
-    header { background: #000; color: #FFD700; padding: 2rem 1rem; text-align: center; animation: fadeIn 1s ease-out; }
-    nav { background: #333; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 1000; }
-    nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; transition: color 0.3s ease; }
-    nav a:hover { color: #FFD700; }
-    section { padding: 2rem 1rem; max-width: 1000px; margin: auto; animation: slideUp 1s ease-out; }
-    h2 { color: #FFD700; margin-bottom: 1rem; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
-    .card { border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1); background: #fff; transition: transform 0.3s ease; }
-    .card:hover { transform: scale(1.03); }
-    .card img { width: 100%; height: auto; display: block; }
-    .card-footer { background: #000; color: #fff; padding: 0.75rem; font-size: 0.9rem; text-align: center; text-transform: uppercase; font-weight: bold; }
-    .form input, .form textarea { width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px; }
-    .form button { background: #FFD700; border: none; padding: 0.75rem 1.5rem; font-weight: bold; cursor: pointer; border-radius: 5px; }
-    footer { background: #eee; padding: 1rem; text-align: center; font-size: 0.9rem; margin-top: 2rem; }
-    .call-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
+    body { font-family: 'Montserrat', sans-serif; background: #fff; color: #333; margin: 0; padding: 0; line-height: 1.6; }
+    header { background: #000; color: #FFD700; padding: 2rem; text-align: center; }
+    h1 { margin: 0 0 0.5rem; }
+    nav { background: #333; padding: 1rem; text-align: center; }
+    nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    section { padding: 2rem 1rem; max-width: 1000px; margin: auto; }
+    h2 { color: #FFD700; }
+    .service { margin-bottom: 2rem; border-bottom: 1px solid #ccc; padding-bottom: 1.5rem; position: relative; }
+    .service img { float: right; max-width: 250px; margin-left: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .service h3 { margin-top: 0; }
+    .quote-button {
+      display: inline-block;
+      margin-top: 1rem;
       background: #FFD700;
       color: #000;
-      padding: 12px 20px;
       font-weight: bold;
-      border-radius: 50px;
+      padding: 10px 20px;
+      border-radius: 5px;
       text-decoration: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      z-index: 1000;
+      transition: background 0.3s ease;
     }
-    .slider {
-      position: relative;
-      overflow: hidden;
-      height: 140px;
+    .quote-button:hover {
+      background: #e6c200;
+    }
+    .testimonial-box {
       background: #f9f9f9;
-      border-radius: 10px;
+      border-left: 4px solid #FFD700;
       padding: 1rem;
+      margin: 2rem auto;
+      max-width: 800px;
+      font-style: italic;
+      border-radius: 6px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
     }
-    .slide {
-      opacity: 0;
-      transition: opacity 0.5s ease-in-out;
-      position: absolute;
-      width: 100%;
-      text-align: center;
+    .testimonial-box strong {
+      display: block;
+      margin-top: 0.5rem;
+      font-style: normal;
+      color: #000;
     }
-    .slide.active {
-      opacity: 1;
-      position: relative;
-    }
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(-10px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes slideUp {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
+    footer { background: #eee; padding: 1rem; text-align: center; font-size: 0.9rem; margin-top: 2rem; }
+    @media (max-width: 700px) {
+      .service img { float: none; display: block; margin: 1rem 0; max-width: 100%; }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="assets/LOGO1-removebg-preview.png" alt="Dapper AV Logo" height="100">
-    <h1>Dapper AV Solutions</h1>
-    <p>Residential & Commercial AV Installations</p>
+    <h1>Our Services</h1>
+    <p>Explore the AV solutions we offer for homes and businesses.</p>
   </header>
 
   <nav>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="#residential">Residential</a>
+    <a href="#commercial">Commercial</a>
+    <a href="index.html#contact">Contact</a>
   </nav>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>My name is Mark Immler. I'm a father of 3 and a husband, a good-hearted Christian who brings integrity and care to every installation. With over 20 years of experience at respected companies like Best Buy and Geek Squad, I offer unmatched knowledge in home automation and networking systems.</p>
-  </section>
-
-  <section id="services">
-    <h2>Service Gallery</h2>
-    <div class="gallery">
-      <a class="card" href="services.html">
-        <img src="assets/CUSTOMTVMOUNTING.png" alt="Custom Mounting">
-        <div class="card-footer">Custom Mounting Service</div>
-      </a>
-      <a class="card" href="services.html">
-        <img src="assets/FIREPLACEMOUNTINGSERVICE.png" alt="Fireplace Mounting">
-        <div class="card-footer">Fireplace Mounting Service</div>
-      </a>
-      <a class="card" href="services.html">
-        <img src="assets/PREMIUMTVMOUNTING.png" alt="Premium Mounting">
-        <div class="card-footer">Premium Mounting Service</div>
-      </a>
-      <a class="card" href="services.html">
-        <img src="assets/REMOTESETUP.png" alt="Remote Setup">
-        <div class="card-footer">Smart Remote Setup</div>
-      </a>
-      <a class="card" href="services.html">
-        <img src="assets/SMARTTVSETUP.png" alt="Smart TV Setup">
-        <div class="card-footer">Smart TV Setup</div>
-      </a>
-      <a class="card" href="services.html">
-        <img src="assets/SOUNDBARSETUPMOUNTING.png" alt="Soundbar Setup">
-        <div class="card-footer">Soundbar Setup & Mounting</div>
-      </a>
-      <a class="card" href="services.html">
-        <img src="assets/TVMOUNTING.png" alt="Basic Mounting">
-        <div class="card-footer">Basic Mounting Service</div>
-      </a>
-      <a class="card" href="services.html">
-        <img src="assets/VIDEO DEVICE SETUP.png" alt="Video Setup">
-        <div class="card-footer">Video Device Setup</div>
-      </a>
+  <section id="residential">
+    <h2>Residential Services</h2>
+    <div class="service">
+      <img src="assets/SMARTTVSETUP.png" alt="Smart TV Setup">
+      <h3>Smart TV Setup</h3>
+      <p>We professionally mount and configure your Smart TV, ensuring clean cable management and full feature activation including streaming apps and voice assistants.</p>
+      <a class="quote-button" href="index.html#contact">Get Quote</a>
+    </div>
+    <div class="service">
+      <img src="assets/SOUNDBARSETUPMOUNTING.png" alt="Soundbar Setup">
+      <h3>Soundbar Mounting</h3>
+      <p>Enhance your entertainment system with precisely installed soundbar mounting that integrates beautifully with your home aesthetic.</p>
+      <a class="quote-button" href="index.html#contact">Get Quote</a>
+    </div>
+    <div class="service">
+      <img src="assets/REMOTESETUP.png" alt="Smart Remote">
+      <h3>Smart Remote Setup</h3>
+      <p>We configure and program smart remotes to control all your AV devices seamlessly, eliminating clutter and confusion.</p>
+      <a class="quote-button" href="index.html#contact">Get Quote</a>
+    </div>
+    <div class="service">
+      <img src="assets/PREMIUMTVMOUNTING.png" alt="Premium Mounting">
+      <h3>Premium TV Mounting</h3>
+      <p>Includes articulating arms, in-wall wiring, and expert placement for the ultimate home viewing experience.</p>
+      <a class="quote-button" href="index.html#contact">Get Quote</a>
     </div>
   </section>
 
-  <section id="testimonials">
-    <h2>Testimonials</h2>
-    <div class="slider">
-      <div class="slide active">"Mark was incredibly professional and our home theater has never looked better! Highly recommend Dapper AV." – Sarah L.</div>
-      <div class="slide">"Prompt, skilled, and friendly. Mark knew exactly what to do and didn’t leave until it was perfect." – James R.</div>
-      <div class="slide">"Affordable and top-tier. We’ll definitely hire him again for our commercial space." – Tanya B.</div>
+  <section id="commercial">
+    <h2>Commercial Services</h2>
+    <div class="service">
+      <img src="assets/VIDEO DEVICE SETUP.png" alt="Video Device Setup">
+      <h3>Commercial Video Solutions</h3>
+      <p>From menu boards to digital signage, we install and configure AV systems that elevate your brand presence.</p>
+      <a class="quote-button" href="index.html#contact">Get Quote</a>
+    </div>
+    <div class="service">
+      <img src="assets/TVMOUNTING.png" alt="TV Mounting">
+      <h3>Office TV Mounting</h3>
+      <p>Secure, professional display mounting for lobbies, conference rooms, and break areas.</p>
+      <a class="quote-button" href="index.html#contact">Get Quote</a>
+    </div>
+    <div class="service">
+      <img src="assets/FIREPLACEMOUNTINGSERVICE.png" alt="Fireplace Mounting">
+      <h3>Fireplace Mounting</h3>
+      <p>Expert solutions for difficult spaces like above fireplaces, ensuring safe and stylish installation.</p>
+      <a class="quote-button" href="index.html#contact">Get Quote</a>
+    </div>
+    <div class="service">
+      <img src="assets/CUSTOMTVMOUNTING.png" alt="Custom TV Mounting">
+      <h3>Custom AV Installations</h3>
+      <p>Unique spaces? Unusual designs? We customize mounting, cabling, and device placement for one-of-a-kind needs.</p>
+      <a class="quote-button" href="index.html#contact">Get Quote</a>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <form action="https://formspree.io/f/xanbpmwn" method="POST" class="form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+  <section>
+    <h2>What Clients Are Saying</h2>
+    <div class="testimonial-box">
+      “Mark was fast, courteous, and the install was flawless. Can’t believe I ever used anyone else!”
+      <strong>– Jennifer T., Houston</strong>
+    </div>
+    <div class="testimonial-box">
+      “From consultation to install, Dapper AV exceeded our expectations. Our church AV system is now top notch.”
+      <strong>– Pastor Raymond C., College Station</strong>
+    </div>
+    <div class="testimonial-box">
+      “The cleanest wiring I’ve seen. Mark treats your home like his own — respectful, skilled, and honest.”
+      <strong>– Terry S., Austin</strong>
+    </div>
   </section>
 
   <footer>
     &copy; 2025 Dapper AV. All rights reserved.
   </footer>
-
-  <a class="call-button" href="tel:+19728241303">Call Now</a>
-
-  <script>
-    // Testimonials slider logic
-    const slides = document.querySelectorAll('.slide');
-    let currentSlide = 0;
-    setInterval(() => {
-      slides[currentSlide].classList.remove('active');
-      currentSlide = (currentSlide + 1) % slides.length;
-      slides[currentSlide].classList.add('active');
-    }, 4000);
-  </script>
 
 </body>
 </html>
