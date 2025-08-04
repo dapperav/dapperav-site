@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Dapper AV Services - Detailed residential and commercial AV service offerings.">
-  <title>Our Services - Dapper AV</title>
+  <meta name="description" content="Contact Dapper AV - Get in touch for premium residential and commercial AV services.">
+  <title>Contact Us - Dapper AV</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Montserrat', sans-serif; background: #fff; color: #333; margin: 0; padding: 0; line-height: 1.6; }
@@ -12,147 +12,42 @@
     h1 { margin: 0 0 0.5rem; }
     nav { background: #333; padding: 1rem; text-align: center; }
     nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; }
-    section { padding: 2rem 1rem; max-width: 1000px; margin: auto; }
-    h2 { color: #FFD700; }
-    .service { display: flex; flex-direction: row; align-items: center; justify-content: space-between; margin-bottom: 2rem; border-bottom: 1px solid #ccc; padding-bottom: 1.5rem; gap: 2rem; }
-    .service img { max-width: 250px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-    .service-text { flex: 1; }
-    .service h3 { margin-top: 0; }
-    .quote-button {
-      display: inline-block;
-      margin-top: 1rem;
-      background: #FFD700;
-      color: #000;
-      font-weight: bold;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background 0.3s ease;
+    section { padding: 2rem 1rem; max-width: 800px; margin: auto; }
+    h2 { color: #FFD700; text-align: center; margin-bottom: 2rem; }
+    form { background: #f9f9f9; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    form input, form textarea {
+      width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px;
+      font-size: 1rem; font-family: 'Montserrat', sans-serif;
     }
-    .quote-button:hover { background: #e6c200; }
-    .testimonial-box {
-      background: #f9f9f9;
-      border-left: 4px solid #FFD700;
-      padding: 1rem;
-      margin: 2rem auto;
-      max-width: 800px;
-      font-style: italic;
-      border-radius: 6px;
-      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    form button {
+      background: #FFD700; color: #000; border: none; padding: 0.75rem 1.5rem; font-weight: bold;
+      border-radius: 5px; cursor: pointer; font-size: 1rem; transition: background 0.3s ease;
     }
-    .testimonial-box strong {
-      display: block;
-      margin-top: 0.5rem;
-      font-style: normal;
-      color: #000;
-    }
+    form button:hover { background: #e6c200; }
     footer { background: #eee; padding: 1rem; text-align: center; font-size: 0.9rem; margin-top: 2rem; }
-    @media (max-width: 700px) {
-      .service { flex-direction: column; text-align: center; }
-      .service img { margin: 1rem 0; max-width: 100%; }
-    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Our Services</h1>
-    <p>Explore the AV solutions we offer for homes and businesses.</p>
+    <h1>Contact Us</h1>
+    <p>Let us help you bring your AV vision to life.</p>
   </header>
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="#residential">Residential</a>
-    <a href="#commercial">Commercial</a>
-    <a href="index.html#contact">Contact</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
-  <section id="residential">
-    <h2>Residential Services</h2>
-    <div class="service">
-      <div class="service-text">
-        <h3>Smart TV Setup</h3>
-        <p>We professionally mount and configure your Smart TV, ensuring clean cable management and full feature activation including streaming apps and voice assistants.</p>
-        <a class="quote-button" href="index.html#contact">Get Quote</a>
-      </div>
-      <img src="assets/SMARTTVSETUP.png" alt="Smart TV Setup">
-    </div>
-    <div class="service">
-      <div class="service-text">
-        <h3>Soundbar Mounting</h3>
-        <p>Enhance your entertainment system with precisely installed soundbar mounting that integrates beautifully with your home aesthetic.</p>
-        <a class="quote-button" href="index.html#contact">Get Quote</a>
-      </div>
-      <img src="assets/SOUNDBARSETUPMOUNTING.png" alt="Soundbar Setup">
-    </div>
-    <div class="service">
-      <div class="service-text">
-        <h3>Smart Remote Setup</h3>
-        <p>We configure and program smart remotes to control all your AV devices seamlessly, eliminating clutter and confusion.</p>
-        <a class="quote-button" href="index.html#contact">Get Quote</a>
-      </div>
-      <img src="assets/REMOTESETUP.png" alt="Smart Remote">
-    </div>
-    <div class="service">
-      <div class="service-text">
-        <h3>Premium TV Mounting</h3>
-        <p>Includes articulating arms, in-wall wiring, and expert placement for the ultimate home viewing experience.</p>
-        <a class="quote-button" href="index.html#contact">Get Quote</a>
-      </div>
-      <img src="assets/PREMIUMTVMOUNTING.png" alt="Premium Mounting">
-    </div>
-  </section>
-
-  <section id="commercial">
-    <h2>Commercial Services</h2>
-    <div class="service">
-      <div class="service-text">
-        <h3>Commercial Video Solutions</h3>
-        <p>From menu boards to digital signage, we install and configure AV systems that elevate your brand presence.</p>
-        <a class="quote-button" href="index.html#contact">Get Quote</a>
-      </div>
-      <img src="assets/VIDEO DEVICE SETUP.png" alt="Video Device Setup">
-    </div>
-    <div class="service">
-      <div class="service-text">
-        <h3>Office TV Mounting</h3>
-        <p>Secure, professional display mounting for lobbies, conference rooms, and break areas.</p>
-        <a class="quote-button" href="index.html#contact">Get Quote</a>
-      </div>
-      <img src="assets/TVMOUNTING.png" alt="TV Mounting">
-    </div>
-    <div class="service">
-      <div class="service-text">
-        <h3>Fireplace Mounting</h3>
-        <p>Expert solutions for difficult spaces like above fireplaces, ensuring safe and stylish installation.</p>
-        <a class="quote-button" href="index.html#contact">Get Quote</a>
-      </div>
-      <img src="assets/FIREPLACEMOUNTINGSERVICE.png" alt="Fireplace Mounting">
-    </div>
-    <div class="service">
-      <div class="service-text">
-        <h3>Custom AV Installations</h3>
-        <p>Unique spaces? Unusual designs? We customize mounting, cabling, and device placement for one-of-a-kind needs.</p>
-        <a class="quote-button" href="index.html#contact">Get Quote</a>
-      </div>
-      <img src="assets/CUSTOMTVMOUNTING.png" alt="Custom TV Mounting">
-    </div>
-  </section>
-
   <section>
-    <h2>What Clients Are Saying</h2>
-    <div class="testimonial-box">
-      “Mark was fast, courteous, and the install was flawless. Can’t believe I ever used anyone else!”
-      <strong>– Jennifer T., Houston</strong>
-    </div>
-    <div class="testimonial-box">
-      “From consultation to install, Dapper AV exceeded our expectations. Our church AV system is now top notch.”
-      <strong>– Pastor Raymond C., College Station</strong>
-    </div>
-    <div class="testimonial-box">
-      “The cleanest wiring I’ve seen. Mark treats your home like his own — respectful, skilled, and honest.”
-      <strong>– Terry S., Austin</strong>
-    </div>
+    <h2>Get In Touch</h2>
+    <form action="https://formspree.io/f/xanbpmwn" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="6" placeholder="Tell us about your project or request..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
